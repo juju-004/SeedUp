@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import { ArrowLeftIcon, ChevronUp } from "./icons";
 import { MenuItem } from "./menu-item";
 import { useSidebarContext } from "./sidebar-context";
-import { SproutIcon } from "lucide-react";
+import { SproutIcon, Users2 } from "lucide-react";
 import * as Icons from "./icons";
 
 export const NAV_DATA = [
@@ -28,6 +28,11 @@ export const NAV_DATA = [
             url: "/add-crop",
           },
         ],
+      },
+      {
+        title: "Community",
+        ico: <Users2 />,
+        items: [],
       },
       {
         title: "Dashboard",
