@@ -19,6 +19,13 @@ export const metadata: Metadata = {
     default: "SeedUp",
   },
   description: "Scale and grow with us",
+  icons: {
+    icon: [
+      { type: "image/png", sizes: "32x32", url: "/images/plant.svg" },
+      { type: "image/svg", sizes: "16x16", url: "/images/plant.svg" },
+    ],
+    apple: { url: "/images/plant.svg", sizes: "180x180" },
+  },
 };
 
 export default function RootLayout({ children }: PropsWithChildren) {
@@ -26,7 +33,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
     <html lang="en" suppressHydrationWarning>
       <body>
         <Providers>
-          <NextTopLoader color="#5750F1" showSpinner={false} />
+          <NextTopLoader color="#2E8B57" showSpinner={false} />
 
           {children}
           <Toaster position="top-center" />

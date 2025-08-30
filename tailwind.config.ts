@@ -18,7 +18,7 @@ const config: Config = {
         current: "currentColor",
         transparent: "transparent",
         white: "#FFFFFF",
-        primary: "#1B5E20",
+        primary: "#2E8B57",
         stroke: "#E6EBF1",
         "stroke-dark": "#27303E",
         dark: {

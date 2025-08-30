@@ -73,7 +73,7 @@ export default function Signin() {
         <p>
           Don't have an account?{" "}
           <Link href="/auth/sign-up" className="text-primary">
-            Sign In
+            Sign Up
           </Link>
         </p>
       </div>

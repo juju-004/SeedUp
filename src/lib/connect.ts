@@ -18,13 +18,22 @@ export interface SessionDoc {
   expires_at: Date;
 }
 
+export interface CropDoc {
+  _id: string;
+  user_id: string; // links crop to a specific user
+  crop_name: string; // e.g. "Maize"
+  planting_date: string; // date of planting
+}
+
 export const getCollections = async (): Promise<{
   users: Collection<UserDoc>;
   sessions: Collection<SessionDoc>;
+  crops: Collection<CropDoc>;
 }> => {
   const db = (await clientPromise).db();
   return {
     users: db.collection<UserDoc>("users"),
     sessions: db.collection<SessionDoc>("sessions"),
+    crops: db.collection<CropDoc>("crops"),
   };
 };

@@ -1,0 +1,115 @@
+[
+  {
+    "cropName": "Maize",
+    "type": "Cereal",
+    "plantingSeason": "April - June (start of rainy season)",
+    "growthSpan": "90 - 120 days",
+    "harvestPeriod": "July - October",
+    "preferredSoil": "Well-drained loamy soil, pH 5.5 - 7.0",
+    "irrigation": "Rainfed, but benefits from supplementary irrigation",
+    "commonVarieties": ["Oba Super 2", "SAMMAZ 14", "TZEE-Y"],
+    "uses": "Staple food, livestock feed, industrial starch"
+  },
+  {
+    "cropName": "Rice",
+    "type": "Cereal",
+    "plantingSeason": "May - July (rainfed lowland); Dry season (Nov - Feb with irrigation)",
+    "growthSpan": "100 - 150 days",
+    "harvestPeriod": "September - December (rainfed)",
+    "preferredSoil": "Clay/loamy soil with good water retention",
+    "irrigation": "Flood irrigation or rainfed lowland",
+    "commonVarieties": ["FARO 44", "NERICA 8", "Ofada"],
+    "uses": "Staple food"
+  },
+  {
+    "cropName": "Cassava",
+    "type": "Root Crop",
+    "plantingSeason": "March - May (early rains) and August",
+    "growthSpan": "8 - 18 months (variety dependent)",
+    "harvestPeriod": "Year-round after maturity",
+    "preferredSoil": "Sandy loam, well-drained",
+    "irrigation": "Mainly rainfed",
+    "commonVarieties": ["TMS 30572", "TME 419", "NR 8082"],
+    "uses": "Garri, fufu, starch, industrial ethanol"
+  },
+  {
+    "cropName": "Yam",
+    "type": "Root Crop",
+    "plantingSeason": "March - April (early rains)",
+    "growthSpan": "6 - 9 months",
+    "harvestPeriod": "August - December",
+    "preferredSoil": "Deep fertile sandy loam with good drainage",
+    "irrigation": "Rainfed",
+    "commonVarieties": [
+      "White yam (Dioscorea rotundata)",
+      "Water yam (Dioscorea alata)"
+    ],
+    "uses": "Boiled yam, pounded yam, yam flour"
+  },
+  {
+    "cropName": "Sorghum",
+    "type": "Cereal",
+    "plantingSeason": "June - July (rainy season)",
+    "growthSpan": "100 - 120 days",
+    "harvestPeriod": "October - November",
+    "preferredSoil": "Well-drained sandy loam, drought tolerant",
+    "irrigation": "Rainfed, tolerates low rainfall",
+    "commonVarieties": ["SAM-SORG 14", "ICSV 400"],
+    "uses": "Tuwo, malt, animal feed"
+  },
+  {
+    "cropName": "Millet",
+    "type": "Cereal",
+    "plantingSeason": "May - June",
+    "growthSpan": "80 - 100 days",
+    "harvestPeriod": "September - October",
+    "preferredSoil": "Light sandy soils, drought tolerant",
+    "irrigation": "Rainfed",
+    "commonVarieties": ["Ex-Borno", "SOSAT-C88"],
+    "uses": "Pap, tuwo, beer brewing"
+  },
+  {
+    "cropName": "Beans (cowpea)",
+    "type": "Legume",
+    "plantingSeason": "July - August",
+    "growthSpan": "60 - 90 days",
+    "harvestPeriod": "September - November",
+    "preferredSoil": "Light sandy loam soils",
+    "irrigation": "Rainfed, tolerates drought",
+    "commonVarieties": ["Ifebrown", "IT89KD-288"],
+    "uses": "Staple protein, akara, moi-moi"
+  },
+  {
+    "cropName": "Groundnut",
+    "type": "Legume",
+    "plantingSeason": "May - June",
+    "growthSpan": "90 - 110 days",
+    "harvestPeriod": "August - October",
+    "preferredSoil": "Light sandy soil, well-drained",
+    "irrigation": "Rainfed",
+    "commonVarieties": ["SAMNUT 22", "SAMNUT 23"],
+    "uses": "Oil, roasted snack, animal feed"
+  },
+  {
+    "cropName": "Soybean",
+    "type": "Legume",
+    "plantingSeason": "June - July",
+    "growthSpan": "90 - 120 days",
+    "harvestPeriod": "October - November",
+    "preferredSoil": "Well-drained loamy soils",
+    "irrigation": "Rainfed, but benefits from irrigation",
+    "commonVarieties": ["TGX 1448-2E", "TGX 1904-6F"],
+    "uses": "Soy milk, soy flour, livestock feed"
+  },
+  {
+    "cropName": "Tomato",
+    "type": "Vegetable",
+    "plantingSeason": "Rainy season (April - August); Dry season (Nov - Feb with irrigation)",
+    "growthSpan": "60 - 90 days",
+    "harvestPeriod": "Year-round with irrigation",
+    "preferredSoil": "Well-drained sandy loam, pH 6.0 - 7.0",
+    "irrigation": "Requires regular irrigation",
+    "commonVarieties": ["Roma VF", "UC82B", "Tropimech"],
+    "uses": "Fresh consumption, stew, tomato paste"
+  }
+]

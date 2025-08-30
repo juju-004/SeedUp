@@ -14,15 +14,6 @@ import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { SessionProvider } from "@/context/SessionContext";
 
-export const metadata: Metadata = {
-  title: {
-    template: "%s | NextAdmin - Next.js Dashboard Kit",
-    default: "NextAdmin - Next.js Dashboard Kit",
-  },
-  description:
-    "Next.js admin dashboard toolkit with 200+ templates, UI components, and integrations for fast dashboard development.",
-};
-
 export default async function RootLayout({ children }: PropsWithChildren) {
   const lucia = await initAuth();
   const cookie = (await cookies()).get("session")?.value ?? "";

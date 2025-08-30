@@ -5,10 +5,129 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { NAV_DATA } from "./data";
 import { ArrowLeftIcon, ChevronUp } from "./icons";
 import { MenuItem } from "./menu-item";
 import { useSidebarContext } from "./sidebar-context";
+import { SproutIcon } from "lucide-react";
+import * as Icons from "./icons";
+
+export const NAV_DATA = [
+  {
+    label: "MAIN MENU",
+    items: [
+      {
+        title: "My Crops",
+        ico: <SproutIcon />,
+        items: [
+          {
+            title: "overview",
+            url: "/",
+          },
+          {
+            title: "add Crop",
+            url: "/add-crop",
+          },
+        ],
+      },
+      {
+        title: "Dashboard",
+        icon: Icons.HomeIcon,
+        items: [
+          {
+            title: "eCommerce",
+            url: "/ecommerce",
+          },
+        ],
+      },
+      {
+        title: "Calendar",
+        url: "/calendar",
+        icon: Icons.Calendar,
+        items: [],
+      },
+      {
+        title: "Profile",
+        url: "/profile",
+        icon: Icons.User,
+        items: [],
+      },
+      {
+        title: "Forms",
+        icon: Icons.Alphabet,
+        items: [
+          {
+            title: "Form Elements",
+            url: "/forms/form-elements",
+          },
+          {
+            title: "Form Layout",
+            url: "/forms/form-layout",
+          },
+        ],
+      },
+      {
+        title: "Tables",
+        url: "/tables",
+        icon: Icons.Table,
+        items: [
+          {
+            title: "Tables",
+            url: "/tables",
+          },
+        ],
+      },
+      {
+        title: "Pages",
+        icon: Icons.Alphabet,
+        items: [
+          {
+            title: "Settings",
+            url: "/pages/settings",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    label: "OTHERS",
+    items: [
+      {
+        title: "Charts",
+        icon: Icons.PieChart,
+        items: [
+          {
+            title: "Basic Chart",
+            url: "/charts/basic-chart",
+          },
+        ],
+      },
+      {
+        title: "UI Elements",
+        icon: Icons.FourCircle,
+        items: [
+          {
+            title: "Alerts",
+            url: "/ui-elements/alerts",
+          },
+          {
+            title: "Buttons",
+            url: "/ui-elements/buttons",
+          },
+        ],
+      },
+      {
+        title: "Authentication",
+        icon: Icons.Authentication,
+        items: [
+          {
+            title: "Sign In",
+            url: "/auth/sign-in",
+          },
+        ],
+      },
+    ],
+  },
+];
 
 export function Sidebar() {
   const pathname = usePathname();
@@ -105,10 +224,14 @@ export function Sidebar() {
                               )}
                               onClick={() => toggleExpanded(item.title)}
                             >
-                              <item.icon
-                                className="size-6 shrink-0"
-                                aria-hidden="true"
-                              />
+                              {item.ico ? (
+                                item.ico
+                              ) : (
+                                <item.icon
+                                  className="size-6 shrink-0"
+                                  aria-hidden="true"
+                                />
+                              )}
 
                               <span>{item.title}</span>
 
@@ -156,10 +279,14 @@ export function Sidebar() {
                                 href={href}
                                 isActive={pathname === href}
                               >
-                                <item.icon
-                                  className="size-6 shrink-0"
-                                  aria-hidden="true"
-                                />
+                                {item.ico ? (
+                                  item.ico
+                                ) : (
+                                  <item.icon
+                                    className="size-6 shrink-0"
+                                    aria-hidden="true"
+                                  />
+                                )}
 
                                 <span>{item.title}</span>
                               </MenuItem>
