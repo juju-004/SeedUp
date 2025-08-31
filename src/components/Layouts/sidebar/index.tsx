@@ -8,12 +8,11 @@ import { useEffect, useState } from "react";
 import { ArrowLeftIcon, ChevronUp } from "./icons";
 import { MenuItem } from "./menu-item";
 import { useSidebarContext } from "./sidebar-context";
-import { SproutIcon, Users2 } from "lucide-react";
-import * as Icons from "./icons";
+import { ShieldUser, SproutIcon, Users2 } from "lucide-react";
 
 export const NAV_DATA = [
   {
-    label: "MAIN MENU",
+    label: "MAIN",
     items: [
       {
         title: "My Crops",
@@ -29,106 +28,18 @@ export const NAV_DATA = [
           },
         ],
       },
+
+      {
+        title: "Crop Advicer",
+        url: "/crops",
+        ico: <ShieldUser />,
+        items: [],
+      },
       {
         title: "Community",
         ico: <Users2 />,
+        url: "/community",
         items: [],
-      },
-      {
-        title: "Dashboard",
-        icon: Icons.HomeIcon,
-        items: [
-          {
-            title: "eCommerce",
-            url: "/ecommerce",
-          },
-        ],
-      },
-      {
-        title: "Calendar",
-        url: "/calendar",
-        icon: Icons.Calendar,
-        items: [],
-      },
-      {
-        title: "Profile",
-        url: "/profile",
-        icon: Icons.User,
-        items: [],
-      },
-      {
-        title: "Forms",
-        icon: Icons.Alphabet,
-        items: [
-          {
-            title: "Form Elements",
-            url: "/forms/form-elements",
-          },
-          {
-            title: "Form Layout",
-            url: "/forms/form-layout",
-          },
-        ],
-      },
-      {
-        title: "Tables",
-        url: "/tables",
-        icon: Icons.Table,
-        items: [
-          {
-            title: "Tables",
-            url: "/tables",
-          },
-        ],
-      },
-      {
-        title: "Pages",
-        icon: Icons.Alphabet,
-        items: [
-          {
-            title: "Settings",
-            url: "/pages/settings",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    label: "OTHERS",
-    items: [
-      {
-        title: "Charts",
-        icon: Icons.PieChart,
-        items: [
-          {
-            title: "Basic Chart",
-            url: "/charts/basic-chart",
-          },
-        ],
-      },
-      {
-        title: "UI Elements",
-        icon: Icons.FourCircle,
-        items: [
-          {
-            title: "Alerts",
-            url: "/ui-elements/alerts",
-          },
-          {
-            title: "Buttons",
-            url: "/ui-elements/buttons",
-          },
-        ],
-      },
-      {
-        title: "Authentication",
-        icon: Icons.Authentication,
-        items: [
-          {
-            title: "Sign In",
-            url: "/auth/sign-in",
-          },
-        ],
       },
     ],
   },
@@ -229,14 +140,7 @@ export function Sidebar() {
                               )}
                               onClick={() => toggleExpanded(item.title)}
                             >
-                              {item.ico ? (
-                                item.ico
-                              ) : (
-                                <item.icon
-                                  className="size-6 shrink-0"
-                                  aria-hidden="true"
-                                />
-                              )}
+                              {item.ico}
 
                               <span>{item.title}</span>
 
@@ -284,14 +188,7 @@ export function Sidebar() {
                                 href={href}
                                 isActive={pathname === href}
                               >
-                                {item.ico ? (
-                                  item.ico
-                                ) : (
-                                  <item.icon
-                                    className="size-6 shrink-0"
-                                    aria-hidden="true"
-                                  />
-                                )}
+                                {item.ico}
 
                                 <span>{item.title}</span>
                               </MenuItem>
