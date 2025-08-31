@@ -4,10 +4,8 @@ import "@/css/style.css";
 import { Sidebar } from "@/components/Layouts/sidebar";
 
 import "flatpickr/dist/flatpickr.min.css";
-import "jsvectormap/dist/jsvectormap.css";
 
 import { Header } from "@/components/Layouts/header";
-import type { Metadata } from "next";
 import type { PropsWithChildren } from "react";
 import { initAuth } from "@/lib/auth";
 import { cookies } from "next/headers";
